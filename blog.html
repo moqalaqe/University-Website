@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>University</title>
+</head>
+
+<!----------  Header ---------->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="./img/eduford_img/logo.png " alt="img"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"> </i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"> </i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-------- Blog Page Content -------->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="./img/eduford_img/certificate.jpg" alt="img">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam amet provident corrupti in quam at facilis a, distinctio et fuga dicta libero recusandae eligendi nulla ad voluptatibus! Ipsam, cum doloribus.</p>
+                <br>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi praesentium est deleniti delectus non dolor asperiores, ea perspiciatis dolorum accusamus?</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, dicta ab. Maiores vel ipsa sunt.</p>
+
+                <div class="comment-box">
+
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="btn aboutredbtn"> POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span> 21 </span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span> 34 </span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span> 42 </span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span> 22 </span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span> 30 </span>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!--------  Footer ------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempore ut numquam aperiam <br> aspernatur voluptate suscipit veniam nulla optio praesentium, laudantium velit amet. Atque, dignissimos?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <script>
+        const nav = document.getElementsByTagName("nav");
+        const navLinks = document.getElementById("navLinks");
+        function showmenu() {
+            nav[0].style.overflow = "visible";
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
