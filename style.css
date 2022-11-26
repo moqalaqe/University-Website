@@ -561,4 +561,8 @@ h3{
         color: #f44336;
         margin-top: 40px;
     }
+
+    .contact-icons div{
+        margin: 0;
+    }
 }
